@@ -10,9 +10,13 @@ setup(
     packages=["mycube"],
     install_requires = [
         "Flask",
-        "flup",
         "redis",
     ],
+    entry_points={
+        'console_scripts' : [
+            'mycube-simple = mycube.wsgi:main'
+        ]
+    },
     url="http://github.com/makefu/mycube-flask",
     package_data = {"mycube": ["*.fcgi"] },
 )
