@@ -12,6 +12,7 @@ app.debug = True
 def ip_delete_store(remoteip):
     app.logger.debug("delete {}".format(remoteip))
     return redis.delete(remoteip)
+
 def ip_get_store(remoteip):
     app.logger.debug("getting {}".format(remoteip))
     return redis.get(remoteip)
@@ -27,7 +28,7 @@ def get_ip():
     if localip:
         return redirect("http://{}/".format(localip), 301)
     else:
-        return Response("No IP Stored for you")
+        return Response("No IP stored for you")
 
 @app.route('/',methods=["POST"])
 def set_ip():

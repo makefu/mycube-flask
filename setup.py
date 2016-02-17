@@ -18,5 +18,4 @@ setup(
         ]
     },
     url="http://github.com/makefu/mycube-flask",
-    package_data = {"mycube": ["*.fcgi"] },
 )

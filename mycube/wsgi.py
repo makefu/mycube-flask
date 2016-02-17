@@ -1,8 +1,5 @@
-from websrv import app
-
-def main():
-    app.run()
+from websrv import app as application
 
 if __name__ == "__main__":
-    main()
+    application.run()
 
