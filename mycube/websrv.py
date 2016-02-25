@@ -26,7 +26,7 @@ def get_ip():
     remoteip = request.access_route[0]
     localip  = ip_get_store(remoteip)
     if localip:
-        return redirect("http://{}/".format(localip), 301)
+        return redirect("http://{}/".format(localip), 302)
     else:
         return Response("No IP stored for you")
 

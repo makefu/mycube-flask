@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name="mycube-flask",
-    version="0.2.3",
+    version="0.2.3.4",
     license="Apache2",
     author="makefu",
     author_email="github@syntax-fehler.de",
